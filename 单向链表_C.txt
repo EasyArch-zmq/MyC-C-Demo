@@ -1,0 +1,57 @@
+struct Node{
+数据
+节点指向下一个节点的指针
+}
+
+使用链表,业务
+int main(){
+查链表的指针
+Node *p;
+}
+
+
+加入节点
+Node *cread（节点Node *head,数据 int value）{
+新建节点：
+Node *pnew,
+申请空间
+保存头结点指针:
+Node *q,
+保存下一个节点的指针：
+Node *p;
+排序：
+while(p(p不为0)&&p->value<pnew->value){为了从大到小排序
+q=p;存下p当前位置
+p->next=p;
+}
+pnew->next=p;
+q->next=pnew;
+
+return head;
+}
+删除节点
+Node *deletenode(Node *head,int value){
+1,判断节点是否存在
+2,找到value所在位置
+Node*tmp,*p;
+#for（p=head,tmp=p->next;tem->value!=value;tmp=tmp->next）；
+p=head;
+tmp=p->next;
+while(p&&p->value!=value){
+p=tmp;
+tmp=tmp->next;
+}
+return head;
+
+}
+
+
+
+
+
+
+
+
+
+
+
